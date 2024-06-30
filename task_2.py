@@ -53,7 +53,7 @@ class Student:
     name = SubjectDescriptor()
     _subjects_csv = []
     subjects = {}
-
+    @dec_logger
     def __init__(self, name, subjects_file):
         self.name = name
         self.load_subjects(subjects_file)
